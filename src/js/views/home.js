@@ -9,8 +9,7 @@ export const Home = () => {
 
 	const { store } = useContext(Context)
 
-	return <div className="text-center mt-5">
-		<h1>Hello Rigo!</h1>
+	return <div className="text-center mt-5 d-flex flex-row flex-wrap">
 		{store.characters.map(item => <div className="card" style={{ width: "18rem" }}>
 			<img src={`https://starwars-visualguide.com/assets/img/characters/${item.uid}.jpg`} className="card-img-top" alt="..." />
 			<div className="card-body">
